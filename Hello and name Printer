@@ -10,6 +10,6 @@ public class Solution {
         scanner sc=new scanner(system.in);
          string s=sc.nextline();
         System.out.println("Hello");
-        System.out.println("Vengatesh");
+        System.out.println("s");
     }
 }
