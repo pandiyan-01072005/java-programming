@@ -7,12 +7,8 @@ import java.util.regex.*;
 public class Solution {
 
     public static void main(String[] args) {
-        Scannner sc=new Scanner(System.in);
-        
-        String input=sc.nextline();
-        String[]words=input.split(" ");
-        String language=words[0];
-        
-        System.out.println("May I know how to learn"+language+"!!!...");
+        Scanner obj = new Scanner (System.in);
+        String a = obj.next();
+        System.out.println("May I know how to learn "+a+"!!!...");
     }
 }
