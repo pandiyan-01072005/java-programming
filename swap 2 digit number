@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+                      
+        Scanner obj = new Scanner(System.in);
+       
+        int sum = obj.nextInt();
+
+        if (sum < 10)
+        {
+            System.out.println("STDOUT");
+           
+        }
+        else
+        {
+            while (sum >= 100)
+            {
+                
+                sum /= 10;
+                
+            }
+            
+            int d1 = sum / 10;
+            
+            int d2 = sum % 10;
+
+            System.out.println((d2 * 10) + d1);
+        }    
+           
+    }
+}
