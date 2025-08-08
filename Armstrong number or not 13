@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+ Scanner sc = new Scanner(System.in);
+        int r = sc.nextInt();
+        if ( r < 100 || r > 999) {
+            System.out.println("No");
+            return;
+        }
+        int original = r;
+        int sum = 0;
+        while (r > 0) {
+            int digit = r % 10;
+            sum += digit * digit * digit;
+            r /= 10;
+        }
+        if (sum == original) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
