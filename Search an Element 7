@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+ Scanner sc = new Scanner(System.in);
+
+        int r = sc.nextInt();
+        int[] arr = new int[r];
+
+         for (int i = 0; i < r; i++) 
+        {
+            arr[i] = sc.nextInt();
+        }
+
+        int SearchElement = sc.nextInt();
+        boolean found = false;
+
+        for (int i = 0; i < r; i++) 
+        {
+            
+            if (arr[i] == SearchElement) 
+            {
+               
+                found = true;
+                break;
+            }
+        }
+
+        if (found) 
+        {
+            System.out.println(SearchElement + " is presented in an array.");
+        } 
+        else 
+        {
+            
+            System.out.println(SearchElement + " is not presented in an array.");
+        }
+    }
+}
