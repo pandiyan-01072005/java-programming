@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     Scanner obj = new Scanner(System.in);
+        long r = obj.nextLong();  
+        if (r >= 1 && r <= 10000000){
+            int count = 0;
+            long num = r;  
+            while (num > 0){
+                num = num / 10;
+                count++;
+            }
+            System.out.println("The count of the given integer is: " + count);
+        } else{
+            System.out.println("Enter a Valid Input");
+        }
+    }
+}
