@@ -13,10 +13,11 @@ public class Solution {
             int r = scanner.nextInt();
 
             double sum = 0; 
+            int a[] = new int [r];
 
             for (int i = 0; i < r; i++) {
-                int num = scanner.nextInt();
-                sum += num; 
+                a[i] = obj.nextInt();  
+                sum += a[i]; 
             }
 
             double average = sum / r; 
