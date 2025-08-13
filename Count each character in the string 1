@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+           Scanner sc = new Scanner(System.in);
+        String r = sc.nextLine();
+        while (r.length() > 0){
+            char ch = r.charAt(0);
+            int count = 0;
+            for (int i = 0; i < r.length(); i++){
+                if (r.charAt(i) == ch){
+                    count++;
+                }
+            }
+            System.out.println(ch + "   " + count);
+            r = r.replace(ch + "", ""); 
+        }
+    }
+}
