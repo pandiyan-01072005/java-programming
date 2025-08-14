@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+     static int sumN(int r){
+        if (r == 1){
+            return 1; 
+        }
+        return r + sumN(r - 1);
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int r = sc.nextInt();
+        if (r >= 1 && r <= 50) {
+            int sum = sumN(r);
+            System.out.printf("The sum of numbers from 1 to %d : %04d", r, sum);
+        } else{
+            System.out.println("Enter a Valid Input!!!!!!!!!!!!!!!!!!");
+        }
+    }
+}
