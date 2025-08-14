@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+            static void printNum(int cur, int r){
+        if (cur > r){
+            return; 
+        }
+        System.out.print(cur + " ");
+        printNum(cur + 1, r); 
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        if (num >= 1 && num <= 50){
+            System.out.println("The first " + num + " Natural Numbers are:");
+            printNum(1, num);
+        }else{
+            System.out.println("Enter a Valid Input!!!!!!!!!!!!!!!!!!!!!!!!");
+        }
+    }
+}
+        
